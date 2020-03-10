@@ -1,5 +1,9 @@
 console.log('Ursus, YAY JavaScript!!!');
 
+//
+// JavaScript Terminology
+// --------------------
+
 // $ - bling
 // . - dot
 // () - paren
@@ -12,27 +16,42 @@ console.log('Ursus, YAY JavaScript!!!');
 // ! - not, bang
 // # - pound, hash
 // || - or, pipes
-// NaN -
+// NaN - not a number
 
-console.log('Myron' * 5);
+console.log('Myron' * 5); // result is NaN
+console.log('ten' * 5); // result is NaN
+
+// JS will coerce a string to a number if the string is a valid number javascript
+// - only happens for operators *, /, or -
+console.log('10' * 5); // result is 50
+
+// concatenates the string to be '55'
 console.log('5' + 5);
 
-// 6 -truthy
-// 0 - falsy
-// 'Ursus'
-// true
-// false
+
+//
+// Data Types
+// --------------------
+
+// number
+// -- 6
+// string
+// -- 'Marshmallow'
+// boolean
+// -- true
+// -- false
+
 // null
+// -- null
 // undefined
+// -- undefined
 
-let kittyKat = null;
+// COMPLEX DATA TYPES
 
-if (-1 == false) {
-  console.log('Falsy???');
-}
-
-// [] - array
-// {} - object
+// array
+// -- []
+// object
+// -- {}
 
 let myArray = ['name', 'nonName', 'First Name'];
 
@@ -50,6 +69,20 @@ console.log(myObject.kittyKat);
 
 // const - cannot reset my value
 // let - allows new assignment
+
+//
+// CONDITIONAL STATEMENTS
+// --------------------
+
+// 6 - truthy
+// 0 - falsy
+// 
+
+let kittyKat = null;
+
+if (-1 == false) {
+  console.log('Falsy???');
+}
 
 if (myArray === 'DOG') {
   console.log(myArray);
@@ -80,7 +113,7 @@ if (!dog) {
 
 }
 
-// comparison operator
+// COMPARISON OPERATORS
 // ==
 // ===
 // !=
@@ -91,7 +124,10 @@ if (!dog) {
 // <=
 // >=
 
-// LOOP
+
+//
+// LOOPs
+// --------------------
 
 const deer = 'spike';
 
@@ -118,6 +154,11 @@ for (let kitty in myArray) {
   console.log(myArray[kitty]);
 }
 
+
+//
+// FUNCTIONs
+// --------------------
+
 // function call, execute, running
 console.log(doStuff('Pam', 'Anderson'));
 
@@ -141,10 +182,19 @@ function doStuff(firstName, lastName) {
 //   // does not happen
 // };
 
-// 'string ' + deer
-// `Hello,
+// STRING CONCATENATION
+console.log('string ' + deer);
+
+// TEMPLATE LITERAL
+console.log(`Hello, ${dear}`);
+console.log(`Hello,
+
+${dear}`);
+
+
 //
-//  ${dear}`
+// BUILT INTO JAVASCRIPT
+// --------------------
 
 // Number(); 6
 // String(); 'string'
@@ -155,7 +205,7 @@ numberArr.length; // 4
 numberArr.push(8); // add to array
 // .pop()
 // .shift()
-// .unnshift()
+// .unshift()
 numberArr[2]
 
 const myName = 'Myron, Schippers, fluffy, buddy';
@@ -171,13 +221,9 @@ const dogData = {
 
 const dogKey = 'type';
 
+// using the dot operator to access object property key
 dogData.name;
+// using a string for object property key
 dogData[dogKey];
 
 console.log(JSON.stringify(dogData));
-
-$(document).ready(readyNow)
-
-function readyNow() {}
-
-function searchAllTheWeb(searchTerm) {}
